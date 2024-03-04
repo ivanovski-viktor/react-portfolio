@@ -1,7 +1,45 @@
+import Navbar from "./Components/Navbar";
+import Main from "./Components/Main";
+import Footer from "./Components/Footer";
+import Section from "./Components/Section";
+import Container from "./Components/Container";
+import Button from "./Components/Button";
+import NavMenu from "./Components/NavMenu";
+import Logo from "./Components/Logo";
+import Carousel from "./Components/Carousel";
+import viktorImg from "./assets/viktor.png";
+
 export default function App() {
   return (
-    <div className="App">
-      <h1>Initial Commit!</h1>
+    <div className="app">
+      <Navbar>
+        <Logo />
+        <NavMenu />
+      </Navbar>
+      <Main>
+        <Section className={"banner-section"}>
+          <Container className={"intro-cont"}>
+            <h4>HI, I'M VIKTOR</h4>
+            <h2>JUNIOR WEB DEVELOPER</h2>
+            <p>
+              Welcome to my corner of the web! I'm Viktor, a dedicated junior
+              web developer with a love for crafting digital experiences. From
+              turning ideas into reality to solving complex problems, I thrive
+              on the challenges that coding presents.
+            </p>
+            <Button> Download </Button>
+          </Container>
+          <Container className={"banner-img"}></Container>
+        </Section>
+        <Section className={"about-section"}>
+          <Container></Container>
+          <Container className={"accordion"}></Container>
+        </Section>
+        <Section className={"carousel-section"}>
+          <Carousel />
+        </Section>
+      </Main>
+      <Footer></Footer>
     </div>
   );
 }

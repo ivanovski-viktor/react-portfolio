@@ -1,0 +1,138 @@
+// Global colors
+$dark-grey: #1f1f1f;
+$grey-transparent: #1f1f1f90;
+$text-white: #f8f7f9;
+$white-transparent: #f8f7f990;
+$border-gray: #d9d9d9;
+
+//Global fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+$poppins-font: "Poppins", Arial, sans-serif;
+
+html {
+  font-size: 20px;
+  padding: 0 !important;
+}
+.button {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.8rem 2.2rem;
+  color: $text-white;
+  background-color: #ffffff00;
+  border: 3px solid $border-gray;
+  &:hover {
+    color: $dark-grey;
+    background-color: $border-gray;
+  }
+}
+body {
+  padding: 0;
+  margin: 0;
+  .app {
+    margin: 0;
+    font-family: $poppins-font;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //   NAV
+    .navbar {
+      background-color: $grey-transparent;
+      color: $text-white;
+      font-weight: 500;
+      position: fixed;
+      top: 0;
+      padding: 20px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.062);
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 1rem;
+        padding: 0;
+        margin: 0;
+        margin-right: 20px;
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+
+        img {
+          width: 3rem;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+    }
+    //   MAIN
+    .main {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      .section {
+        margin: 0;
+        width: 100%;
+        height: 50vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        .container {
+          width: 45%;
+        }
+      }
+      .section.banner-section {
+        height: 80vh;
+        padding-top: 20vh;
+        background: radial-gradient(
+          circle at right bottom,
+          #1c756249 20%,
+          #1f1f1ffa 40%,
+          $dark-grey 100%
+        );
+        color: $text-white;
+        .container.intro-cont {
+          padding-left: 4rem;
+          padding-left: 4rem;
+          padding-bottom: 4rem;
+          h4 {
+            font-size: 1.2rem;
+            font-weight: 700;
+          }
+          h2 {
+            font-size: 4.6rem;
+            font-weight: 700;
+            line-height: 4rem;
+            margin: 20px 0;
+          }
+          p {
+            font-size: 1.2rem;
+            color: $white-transparent;
+          }
+        }
+
+        .container.banner-img {
+          width: 50%;
+          height: 100%;
+          background-image: url("../assets/viktor.png");
+          background-repeat: no-repeat;
+          background-position: center bottom;
+          background-size: 60%;
+        }
+      }
+      .section.carousel-section {
+        width: 100%;
+        background-color: $dark-grey;
+      }
+    }
+  }
+}
