@@ -7,7 +7,8 @@ import Button from "./Components/Button";
 import NavMenu from "./Components/NavMenu";
 import Logo from "./Components/Logo";
 import Carousel from "./Components/Carousel";
-import viktorImg from "./assets/viktor.png";
+import Projects from "./Components/Projects";
+import Accordion from "./Components/Accordion";
 
 export default function App() {
   return (
@@ -32,11 +33,23 @@ export default function App() {
           <Container className={"banner-img"}></Container>
         </Section>
         <Section className={"about-section"}>
-          <Container></Container>
-          <Container className={"accordion"}></Container>
+          <Container>
+            {" "}
+            About me:
+            <div>
+              Hello, My name is Viktor Ivanovski from Skopje. In my spare time i
+              like to read graphics novels, watch tv series and play Fifa 😁
+            </div>
+          </Container>
+          <Container className={"accordion"}>
+            <Accordion />
+          </Container>
         </Section>
         <Section className={"carousel-section"}>
           <Carousel />
+        </Section>
+        <Section className={"projects-section"}>
+          <Projects />
         </Section>
       </Main>
       <Footer></Footer>
