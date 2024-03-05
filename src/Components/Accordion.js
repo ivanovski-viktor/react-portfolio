@@ -17,7 +17,7 @@ const faqs = [
 ];
 
 export default function Accordion() {
-  const [curOpen, setIsOpen] = useState(null);
+  const [curOpen, setIsOpen] = useState(false);
 
   return (
     <div className="accordion">

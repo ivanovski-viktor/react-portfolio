@@ -2,7 +2,6 @@ import Navbar from "./Components/Navbar";
 import Main from "./Components/Main";
 import Footer from "./Components/Footer";
 import Section from "./Components/Section";
-import Container from "./Components/Container";
 import Button from "./Components/Button";
 import NavMenu from "./Components/NavMenu";
 import Logo from "./Components/Logo";
@@ -19,8 +18,8 @@ export default function App() {
       </Navbar>
       <Main>
         <Section className={"banner-section"}>
-          <Container className={"intro-cont"}>
-            <h4>HI, I'M VIKTOR</h4>
+          <div className={"container intro-cont"}>
+            <h4>VIKTOR IVANOVSKI</h4>
             <h2>JUNIOR WEB DEVELOPER</h2>
             <p>
               Welcome to my corner of the web! I'm Viktor, a dedicated junior
@@ -28,22 +27,21 @@ export default function App() {
               turning ideas into reality to solving complex problems, I thrive
               on the challenges that coding presents.
             </p>
-            <Button> Download </Button>
-          </Container>
-          <Container className={"banner-img"}></Container>
+            <Button>Download</Button>
+          </div>
+          <div className={"container banner-img"}></div>
         </Section>
         <Section className={"about-section"}>
-          <Container>
-            {" "}
-            About me:
+          <div className={"container about-me"}>
+            <h2>ABOUT ME:</h2>
             <div>
               Hello, My name is Viktor Ivanovski from Skopje. In my spare time i
               like to read graphics novels, watch tv series and play Fifa 😁
             </div>
-          </Container>
-          <Container className={"accordion"}>
+          </div>
+          <div className={"container accordion"}>
             <Accordion />
-          </Container>
+          </div>
         </Section>
         <Section className={"carousel-section"}>
           <Carousel />

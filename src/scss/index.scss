@@ -4,55 +4,17 @@ $grey-transparent: #00000179;
 $text-white: #fff;
 $white-transparent: #f8f7f990;
 $border-gray: #d9d9d9;
-
+$border-green: #006d6e;
 //Global fonts
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 $poppins-font: "Poppins", Arial, sans-serif;
 
+* {
+  font-family: $poppins-font !important;
+}
 html {
   font-size: 20px;
   padding: 0 !important;
-}
-.section.projects-section {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  height: 1000px;
-  width: 100%;
-  .projects {
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 4rem 0;
-  }
-}
-.project-card {
-  width: 400px;
-  padding: 25px;
-  height: 200px;
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-radius: 25px 25px 25px 25px;
-  background-color: $dark-grey;
-  div {
-    text-align: center;
-    color: $text-white;
-  }
-  img {
-    max-width: 100px !important;
-  }
-  a {
-    color: $text-white;
-    text-decoration: none;
-    &:hover {
-      color: rgb(106, 106, 219);
-    }
-  }
 }
 
 .button.hmb-menu {
@@ -96,7 +58,7 @@ body {
       content: "Skills";
     }
     margin: 0;
-    font-family: $poppins-font;
+
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -205,49 +167,61 @@ body {
           background-image: url("../assets/viktor.jpg");
           background-repeat: no-repeat;
           background-position: center center;
-          background-size: 50%;
+          background-size: 60%;
         }
       }
       .section.about-section {
         height: 30rem;
+        .about-me {
+          padding: 25px;
+        }
         .accordion {
           display: flex;
           flex-direction: column;
-
           row-gap: 20px;
           .item {
+            width: 100%;
             background-color: #fff;
             display: flex;
             gap: 10px;
             align-items: center;
             justify-content: space-between;
             font-size: 0.9rem;
-            padding: 0px 15px;
+            padding: 5px 15px;
             border-bottom: 4px solid #000;
             color: #000;
+            transform: transition 3s ease-in-out;
             box-shadow: 2px 2px 10px 1px #0000003d;
+            &:hover {
+              border-color: $border-green;
+              .number {
+                color: $border-green;
+              }
+            }
             &.open {
-              transform: transition 5s ease-in;
-              border-color: rgb(132, 104, 184);
+              transform: transition 3s ease-in-out;
+              border-color: $border-green;
             }
             .icon img {
-              width: 25px;
+              width: 20px;
             }
             .text {
-              padding: 0;
+              margin: 0;
+              font-weight: 500;
             }
             .number {
               font-size: 1.3rem;
-              padding: 0;
+              margin: 0;
+              font-weight: 600;
               &.open {
-                color: rgb(132, 104, 184);
+                color: $border-green;
               }
             }
           }
           .content-box {
             font-size: 0.8rem;
             padding-left: 10px;
-            color: $dark-grey;
+            color: #000000ab;
           }
         }
       }
@@ -282,6 +256,98 @@ body {
         }
         .swiper-pagination-bullet {
           background-color: #ffffff !important;
+        }
+      }
+      .section.projects-section {
+        width: 100%;
+        display: flex;
+        height: 100%;
+        flex-wrap: wrap;
+        width: 100%;
+        .projects {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          gap: 10px;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          padding: 4rem 0;
+        }
+      }
+      .project-card {
+        width: 400px;
+        padding: 25px;
+        height: 200px;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 25px 25px 25px 25px;
+        background-color: $dark-grey;
+        div {
+          text-align: center;
+          color: $text-white;
+        }
+        img {
+          max-width: 100px !important;
+        }
+        a {
+          color: $text-white;
+          text-decoration: none;
+          &:hover {
+            color: rgb(106, 106, 219);
+          }
+        }
+      }
+    }
+
+    .footer {
+      padding: 2rem 0;
+      height: 100%;
+      color: #fff;
+      width: 100%;
+      background: url("../assets/lake.jpg");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+
+      &:before {
+        z-index: 2;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000001d7;
+      }
+      h5,
+      p {
+        z-index: 3;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        z-index: 3;
+        ul {
+          padding: 0;
+          list-style: none;
+          display: flex;
+          gap: 20px;
+          img {
+            padding: 0;
+            width: 50px;
+          }
+        }
+        &.icons {
+          border-top: 1px solid #fff;
         }
       }
     }
