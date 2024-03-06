@@ -21,12 +21,12 @@ export default function Footer() {
       <div className="container icons">
         <ul>
           <li>
-            <a href="https://github.com/ivanovski-viktor">
+            <a href="https://www.instagram.com/i_viktorr">
               <img src={InstagramIcon} alt="social-icon" />
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="https://www.linkedin.com/in/viktor-ivanovski-a47b8426a/">
               <img src={LinkedinIcon} alt="social-icon" />
             </a>
           </li>

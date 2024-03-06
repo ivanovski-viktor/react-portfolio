@@ -4,44 +4,44 @@ export default function ProjectsData() {
       {
         image: require("../assets/cart.png"),
         title: "Simple Shop - Webpack",
-        link: "#",
+        link: "https://github.com/ivanovski-viktor/shop-api-project",
       },
       {
         image: require("../assets/calculator.png"),
         title: "Calculator",
-        link: "#",
+        link: "https://github.com/ivanovski-viktor/project-calculator",
       },
       {
         image: require("../assets/sketch.png"),
         title: "Etch-A-Sketch",
-        link: "#",
+        link: "https://github.com/ivanovski-viktor/etch-a-sketch-public",
       },
       {
         image: require("../assets/scissors.png"),
         title: "Rock-Paper-Scissors",
-        link: "#",
+        link: "https://github.com/ivanovski-viktor/rock-paper-scissors",
       },
     ],
     [
       {
-        image: require("../assets/academy.png"),
-        title: "Online Dev Academy",
-        link: "#",
+        image: require("../assets/calculator.png"),
+        title: "BMI Calculator",
+        link: "https://github.com/ivanovski-viktor/BMI-Calculator-React",
       },
       {
         image: require("../assets/bill.png"),
         title: "Split a bill",
-        link: "#",
+        link: "https://github.com/ivanovski-viktor/eat-n-split",
       },
       {
         image: require("../assets/recipe.png"),
-        title: "Recipes",
-        link: "#",
+        title: "Pizza Menu",
+        link: "https://github.com/ivanovski-viktor/pizza-menu-react",
       },
       {
         image: require("../assets/sole.png"),
         title: "Step App",
-        link: "#",
+        link: "https://github.com/ivanovski-viktor/step-app",
       },
     ],
   ];

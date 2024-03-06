@@ -36,8 +36,11 @@ export default function App() {
             <div>
               <h2>ABOUT ME:</h2>
               <p>
-                Hello, My name is Viktor Ivanovski from Skopje. In my spare time
-                i like to read graphics novels, watch tv series and play Fifa 😁
+                Hey, I'm Viktor Ivanovski, a coder in Skopje. When I'm not
+                knee-deep in code, you'll catch me exploring new places, gaming
+                or reading a few chapters of manga. I like to balance things out
+                with the occasional coding binge and, of course, enjoying a
+                drink or two. Cheers!😁
               </p>
             </div>
           </div>

@@ -4,15 +4,15 @@ import minusIcon from "../assets/minus.png";
 const faqs = [
   {
     title: "What is my education?",
-    text: "I'm a computer science student in my last year of studies at FICT Bitola! I'm currently enrolled in a front-end development academy with React.js at Change Academy Skopje",
+    text: "I'm a computer science student in my last year of studies at FICT Bitola! I'm currently enrolled in a Front-End Development academy with React.js at Change Academy Skopje",
   },
   {
     title: "Do I have any work experience ?",
-    text: "I have been working as a Wordpress Developer at Coordea on 3 projects since 1.11.2023 - 5 months experience",
+    text: "I have been working as a Wordpress Developer at Coordea on 3 projects since 1.11.2023 - 5 months experience. While working for Coordea I managed to strengthen my CSS skills (animations, specificity, dev-tools debugging) and my Programming skills in general.",
   },
   {
     title: "What am I looking for?",
-    text: "I'm looging for a Junior Web Developer opportunity",
+    text: "I'm looking for a Junior Web Developer opportunity or an Internship that can lead to full-time employment!",
   },
 ];
 

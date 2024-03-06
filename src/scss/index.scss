@@ -1,10 +1,10 @@
 // Global colors
-$dark-grey: #242d5fa6;
-$grey-transparent: #00000179;
-$text-white: #fff;
-$white-transparent: #f8f7f990;
-$border-gray: #d9d9d9;
-$border-green: #006d6e;
+$bg-black: #000001d7;
+$txt-white: #fff;
+$txt-transparent-white: #ffffffb7;
+$border-gray: #e4dcd5;
+$green: #068484;
+
 //Global fonts
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 $poppins-font: "Poppins", Arial, sans-serif;
@@ -14,7 +14,7 @@ $poppins-font: "Poppins", Arial, sans-serif;
 }
 a {
   text-decoration: none;
-  color: #fff;
+  color: $txt-white;
   &:hover {
     color: #ffffff62;
   }
@@ -41,12 +41,12 @@ html {
   font-size: 0.8rem;
   font-weight: 500;
   padding: 0.8rem 2.2rem;
-  color: $text-white;
+  color: $txt-white;
   background-color: #ffffff00;
   border: 2px solid $border-gray;
   &:hover {
     color: #000;
-    background-color: #fff;
+    background-color: $txt-white;
   }
 }
 body {
@@ -75,7 +75,7 @@ body {
     //   NAV
     .navbar {
       background-color: #000000ce;
-      color: $text-white;
+      color: $txt-white;
       font-weight: 500;
       z-index: 2;
       position: fixed;
@@ -134,7 +134,7 @@ body {
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        color: $text-white;
+        color: $txt-white;
         position: relative;
         &:before {
           z-index: 1;
@@ -145,7 +145,7 @@ body {
           left: 0;
           right: 0;
           bottom: 0;
-          background-color: #000001d7;
+          background-color: $bg-black;
         }
 
         .container.intro-cont {
@@ -155,6 +155,7 @@ body {
           h4 {
             font-size: 1rem;
             font-weight: 700;
+            color: $txt-transparent-white;
           }
           h2 {
             font-size: 2.6rem;
@@ -164,7 +165,7 @@ body {
           }
           p {
             font-size: 0.8rem;
-            color: $white-transparent;
+            color: $txt-transparent-white;
           }
         }
 
@@ -194,7 +195,7 @@ body {
           padding-right: 50px;
           .item {
             width: 100%;
-            background-color: #fff;
+            background-color: $txt-white;
             display: flex;
             gap: 10px;
             align-items: center;
@@ -206,14 +207,14 @@ body {
             transform: transition 3s ease-in-out;
             box-shadow: 2px 2px 10px 1px #0000003d;
             &:hover {
-              border-color: $border-green;
+              border-color: $green;
               .number {
-                color: $border-green;
+                color: $green;
               }
             }
             &.open {
               transform: transition 3s ease-in-out;
-              border-color: $border-green;
+              border-color: $green;
             }
             .icon img {
               width: 20px;
@@ -227,7 +228,7 @@ body {
               margin: 0;
               font-weight: 600;
               &.open {
-                color: $border-green;
+                color: $green;
               }
             }
           }
@@ -247,7 +248,7 @@ body {
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
-        color: $text-white;
+        color: $txt-white;
         position: relative;
         &:before {
           z-index: 1;
@@ -257,18 +258,18 @@ body {
           left: 0;
           right: 0;
           bottom: 0;
-          background-color: #000001d7;
+          background-color: $bg-black;
         }
         .swiper-button-next,
         .swiper-button-prev {
-          color: #fff;
-          fill: white;
+          color: $txt-white;
+          fill: $txt-white;
         }
         .swiper-pagination-bullet-active {
-          background-color: #ffffff !important;
+          background-color: $txt-white !important;
         }
         .swiper-pagination-bullet {
-          background-color: #ffffff !important;
+          background-color: $txt-white !important;
         }
       }
       .section.projects-section {
@@ -283,9 +284,10 @@ body {
           }
           .tab-content {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            gap: 40px;
+            gap: 30px;
             padding: 0;
           }
         }
@@ -302,7 +304,7 @@ body {
         border: 2px solid #000;
         &:hover,
         &.selected {
-          color: #fff;
+          color: $txt-white;
           background-color: #000;
         }
       }
@@ -329,12 +331,12 @@ body {
           left: 0;
           bottom: 0;
           right: 0;
-          background-color: #000001d7;
+          background-color: $bg-black;
           z-index: 2;
         }
         h4 {
           position: relative;
-          color: $text-white;
+          color: $txt-white;
           z-index: 3;
         }
         img {
@@ -343,7 +345,7 @@ body {
         }
         a {
           z-index: 3;
-          color: $text-white;
+          color: $txt-white;
           text-decoration: none;
           &:hover {
             color: rgb(106, 106, 219);
@@ -355,7 +357,7 @@ body {
     .footer {
       padding: 2rem 0;
       height: 100%;
-      color: #fff;
+      color: $txt-white;
       width: 100%;
       background: url("../assets/lake.jpg");
       background-position: center center;
@@ -376,7 +378,7 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: #000001d7;
+        background-color: $bg-black;
       }
       h5,
       p {
@@ -390,6 +392,9 @@ body {
           padding: 0;
           list-style: none;
           display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
           gap: 20px;
           img {
             padding: 0;
@@ -397,7 +402,7 @@ body {
           }
         }
         &.icons {
-          border-top: 1px solid #fff;
+          border-top: 1px solid $txt-white;
         }
       }
     }
@@ -435,5 +440,63 @@ body {
     font-size: 2rem;
     background-color: #000000ef;
     overflow-y: none;
+  }
+}
+// responsive
+@media (max-width: 767px) {
+  body {
+    .app {
+      .navbar {
+        gap: 0;
+      }
+      .main {
+        .section.banner-section {
+          .container.intro-cont {
+            padding: 0 1.25rem;
+            width: 100%;
+            text-align: center;
+          }
+          .container.banner-img {
+            display: none;
+          }
+        }
+        .section.about-section {
+          flex-direction: column;
+          justify-content: center !important;
+          height: 100%;
+          padding: 4rem 0;
+          .about-me {
+            padding: 0;
+            width: 100%;
+            div {
+              padding: 0 1.5rem;
+              text-align: center;
+            }
+          }
+          .accordion {
+            width: 100%;
+            padding: 0;
+            .item {
+              padding: 0;
+              gap: 0;
+              justify-content: space-evenly;
+            }
+          }
+        }
+        .section.projects-section {
+          #projects {
+            .tabs {
+              flex-direction: column;
+              gap: 1rem;
+              padding-bottom: 3rem;
+              .button-tab {
+                margin: 0;
+                width: 80%;
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
