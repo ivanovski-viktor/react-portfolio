@@ -4,7 +4,7 @@ import InstagramIcon from "../assets/instagram.png";
 
 export default function Footer() {
   return (
-    <div className="footer">
+    <div id="footer" className="footer">
       <h5>Skills:</h5>
       <div className="container">
         <ul>

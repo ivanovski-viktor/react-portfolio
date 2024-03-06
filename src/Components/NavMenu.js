@@ -10,10 +10,21 @@ export default function NavMenu() {
     <>
       <div className="nav-menu">
         <ul>
-          <li>Home</li>
-          <li>About Me</li>
-          <li>Technologies</li>
-          <li>Contact</li>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#carousel">Technologies</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#footer">Contact</a>
+          </li>
         </ul>
       </div>
       <Button onClick={handleOpenSubMenu} className={"hmb-menu"}>

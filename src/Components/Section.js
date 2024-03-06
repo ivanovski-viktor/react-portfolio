@@ -1,3 +1,7 @@
-export default function Section({ children, className }) {
-  return <div className={`section ${className}`}>{children}</div>;
+export default function Section({ children, className, id }) {
+  return (
+    <div id={id} className={`section ${className}`}>
+      {children}
+    </div>
+  );
 }

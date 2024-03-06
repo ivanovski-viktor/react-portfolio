@@ -12,6 +12,13 @@ $poppins-font: "Poppins", Arial, sans-serif;
 * {
   font-family: $poppins-font !important;
 }
+a {
+  text-decoration: none;
+  color: #fff;
+  &:hover {
+    color: #ffffff62;
+  }
+}
 html {
   font-size: 20px;
   padding: 0 !important;
@@ -29,6 +36,7 @@ html {
   }
 }
 .button {
+  cursor: pointer;
   text-transform: uppercase;
   font-size: 0.8rem;
   font-weight: 500;
@@ -66,7 +74,7 @@ body {
     align-items: center;
     //   NAV
     .navbar {
-      background-color: $grey-transparent;
+      background-color: #000000ce;
       color: $text-white;
       font-weight: 500;
       z-index: 2;
@@ -77,7 +85,7 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      box-shadow: 0px 0px 20px 1px rgba(255, 255, 255, 0.062);
+      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.514);
 
       ul {
         list-style: none;
@@ -174,11 +182,16 @@ body {
         height: 30rem;
         .about-me {
           padding: 25px;
+
+          div {
+            padding: 0 100px;
+          }
         }
         .accordion {
           display: flex;
           flex-direction: column;
           row-gap: 20px;
+          padding-right: 50px;
           .item {
             width: 100%;
             background-color: #fff;
@@ -260,39 +273,76 @@ body {
       }
       .section.projects-section {
         width: 100%;
-        display: flex;
         height: 100%;
-        flex-wrap: wrap;
-        width: 100%;
-        .projects {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          gap: 10px;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: center;
+        #projects {
           padding: 4rem 0;
+          .tabs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .tab-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 0;
+          }
+        }
+      }
+      .button-tab {
+        cursor: pointer;
+        margin: 0 1rem 4rem 1rem;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0.8rem 2.2rem;
+        color: #000;
+        background-color: #ffffff00;
+        border: 2px solid #000;
+        &:hover,
+        &.selected {
+          color: #fff;
+          background-color: #000;
         }
       }
       .project-card {
-        width: 400px;
+        position: relative;
+        z-index: 1;
+        width: 250px;
         padding: 25px;
         height: 200px;
         font-size: 0.8rem;
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        border-radius: 25px 25px 25px 25px;
-        background-color: $dark-grey;
-        div {
-          text-align: center;
+        background-image: url("../assets/snow.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.514);
+        &::after {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          background-color: #000001d7;
+          z-index: 2;
+        }
+        h4 {
+          position: relative;
           color: $text-white;
+          z-index: 3;
         }
         img {
+          z-index: 3;
           max-width: 100px !important;
         }
         a {
+          z-index: 3;
           color: $text-white;
           text-decoration: none;
           &:hover {
@@ -383,7 +433,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    background-color: $dark-grey;
+    background-color: #000000ef;
     overflow-y: none;
   }
 }

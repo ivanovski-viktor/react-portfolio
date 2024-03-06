@@ -17,7 +17,7 @@ export default function App() {
         <NavMenu />
       </Navbar>
       <Main>
-        <Section className={"banner-section"}>
+        <Section id={"banner"} className={"banner-section"}>
           <div className={"container intro-cont"}>
             <h4>VIKTOR IVANOVSKI</h4>
             <h2>JUNIOR WEB DEVELOPER</h2>
@@ -31,22 +31,24 @@ export default function App() {
           </div>
           <div className={"container banner-img"}></div>
         </Section>
-        <Section className={"about-section"}>
+        <Section id={"about"} className={"about-section"}>
           <div className={"container about-me"}>
-            <h2>ABOUT ME:</h2>
             <div>
-              Hello, My name is Viktor Ivanovski from Skopje. In my spare time i
-              like to read graphics novels, watch tv series and play Fifa 😁
+              <h2>ABOUT ME:</h2>
+              <p>
+                Hello, My name is Viktor Ivanovski from Skopje. In my spare time
+                i like to read graphics novels, watch tv series and play Fifa 😁
+              </p>
             </div>
           </div>
           <div className={"container accordion"}>
             <Accordion />
           </div>
         </Section>
-        <Section className={"carousel-section"}>
+        <Section id={"carousel"} className={"carousel-section"}>
           <Carousel />
         </Section>
-        <Section className={"projects-section"}>
+        <Section id={"projects"} className={"projects-section"}>
           <Projects />
         </Section>
       </Main>
