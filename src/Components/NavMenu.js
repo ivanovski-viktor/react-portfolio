@@ -1,6 +1,8 @@
 import { useState } from "react";
 import hmbMenu from "../assets/hmb-menu.png";
 import Button from "./Button";
+import closeIcon from "../assets/close.png";
+
 export default function NavMenu() {
   const [openSubMenu, setOpenSubMenu] = useState(false);
   function handleOpenSubMenu() {
@@ -39,7 +41,7 @@ export default function NavMenu() {
             <li>Contact</li>
           </ul>
           <Button onClick={handleOpenSubMenu} className={"hmb-close hmb-menu"}>
-            ✖️
+            <img src={closeIcon} alt="close-icon" />
           </Button>
         </div>
       ) : null}

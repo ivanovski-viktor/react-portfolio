@@ -43,6 +43,16 @@ export default function ProjectsData() {
         title: "Step App",
         link: "https://github.com/ivanovski-viktor/step-app",
       },
+      {
+        image: require("../assets/plane.png"),
+        title: "Travel List",
+        link: "https://github.com/ivanovski-viktor/travel-list",
+      },
+      {
+        image: require("../assets/fuel.png"),
+        title: "Fuel Consumption Calculator",
+        link: "https://github.com/ivanovski-viktor/fuel-consumption-calculator",
+      },
     ],
   ];
   return content;

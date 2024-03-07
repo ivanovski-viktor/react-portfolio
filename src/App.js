@@ -8,7 +8,7 @@ import Logo from "./Components/Logo";
 import Carousel from "./Components/Carousel";
 import Projects from "./Components/Projects";
 import Accordion from "./Components/Accordion";
-
+import cv from "./assets/my-cv.pdf";
 export default function App() {
   return (
     <div className="app">
@@ -27,7 +27,11 @@ export default function App() {
               turning ideas into reality to solving complex problems, I thrive
               on the challenges that coding presents.
             </p>
-            <Button>Download</Button>
+            <Button>
+              <a href={cv} download>
+                Download
+              </a>
+            </Button>
           </div>
           <div className={"container banner-img"}></div>
         </Section>

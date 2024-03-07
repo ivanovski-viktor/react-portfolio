@@ -37,11 +37,13 @@ function TabContent({ tab }) {
   return (
     <div className="tab-content">
       {tab.map((item, i) => (
-        <div key={i} className="project-card">
-          <img src={item.image} alt="img" />
-          <h4>{item.title}</h4>
-          <a href={item.link}>Open!</a>
-        </div>
+        <a href={item.link}>
+          <div key={i} className="project-card">
+            <img src={item.image} alt="img" />
+            <h4>{item.title}</h4>
+            <a>Open!</a>
+          </div>
+        </a>
       ))}
     </div>
   );
