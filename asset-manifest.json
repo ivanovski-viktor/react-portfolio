@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ivanovski-viktor/react-portfolio/static/css/main.fae9f706.css",
-    "main.js": "/ivanovski-viktor/react-portfolio/static/js/main.bd2a7528.js",
-    "static/media/snow.jpg": "/ivanovski-viktor/react-portfolio/static/media/snow.37959412064b820868ca.jpg",
-    "static/media/lake.jpg": "/ivanovski-viktor/react-portfolio/static/media/lake.5cecf3345df079a409e1.jpg",
-    "static/media/viktor.jpg": "/ivanovski-viktor/react-portfolio/static/media/viktor.8bb4fb91a73a58dc7956.jpg",
-    "static/media/react.png": "/ivanovski-viktor/react-portfolio/static/media/react.0fbfc6dfe09b646bf167.png",
-    "static/media/php.png": "/ivanovski-viktor/react-portfolio/static/media/php.913aa6fd9f1b339a431a.png",
-    "index.html": "/ivanovski-viktor/react-portfolio/index.html",
-    "main.fae9f706.css.map": "/ivanovski-viktor/react-portfolio/static/css/main.fae9f706.css.map",
-    "main.bd2a7528.js.map": "/ivanovski-viktor/react-portfolio/static/js/main.bd2a7528.js.map"
+    "main.css": "/react-portfolio/static/css/main.0db13d4b.css",
+    "main.js": "/react-portfolio/static/js/main.1f75c52d.js",
+    "static/media/snow.jpg": "/react-portfolio/static/media/snow.37959412064b820868ca.jpg",
+    "static/media/lake.jpg": "/react-portfolio/static/media/lake.5cecf3345df079a409e1.jpg",
+    "static/media/viktor.jpg": "/react-portfolio/static/media/viktor.8bb4fb91a73a58dc7956.jpg",
+    "static/media/react.png": "/react-portfolio/static/media/react.0fbfc6dfe09b646bf167.png",
+    "static/media/php.png": "/react-portfolio/static/media/php.913aa6fd9f1b339a431a.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.0db13d4b.css.map": "/react-portfolio/static/css/main.0db13d4b.css.map",
+    "main.1f75c52d.js.map": "/react-portfolio/static/js/main.1f75c52d.js.map"
   },
   "entrypoints": [
-    "static/css/main.fae9f706.css",
-    "static/js/main.bd2a7528.js"
+    "static/css/main.0db13d4b.css",
+    "static/js/main.1f75c52d.js"
   ]
 }
