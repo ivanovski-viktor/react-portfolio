@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.8b5b5630.css",
-    "main.js": "/react-portfolio/static/js/main.ec286916.js",
-    "static/media/snow.jpg": "/react-portfolio/static/media/snow.37959412064b820868ca.jpg",
-    "static/media/lake.jpg": "/react-portfolio/static/media/lake.5cecf3345df079a409e1.jpg",
-    "static/media/viktor.jpg": "/react-portfolio/static/media/viktor.8bb4fb91a73a58dc7956.jpg",
+    "main.css": "/react-portfolio/static/css/main.5eae7413.css",
+    "main.js": "/react-portfolio/static/js/main.cb07f04b.js",
+    "static/media/VIKTOR_IVANOVSKI.png": "/react-portfolio/static/media/VIKTOR_IVANOVSKI.41f7af59b17f87ceedc5.png",
+    "static/media/banner-bg.jpg": "/react-portfolio/static/media/banner-bg.3fdd6cf0bf750d8d481b.jpg",
+    "static/media/snow.jpg": "/react-portfolio/static/media/snow.98e8fb7250610b768b0d.jpg",
     "static/media/my-cv.pdf": "/react-portfolio/static/media/my-cv.a6c3003b63f7e9ca35ec.pdf",
     "static/media/react.png": "/react-portfolio/static/media/react.0fbfc6dfe09b646bf167.png",
     "static/media/php.png": "/react-portfolio/static/media/php.913aa6fd9f1b339a431a.png",
     "index.html": "/react-portfolio/index.html",
-    "main.8b5b5630.css.map": "/react-portfolio/static/css/main.8b5b5630.css.map",
-    "main.ec286916.js.map": "/react-portfolio/static/js/main.ec286916.js.map"
+    "main.5eae7413.css.map": "/react-portfolio/static/css/main.5eae7413.css.map",
+    "main.cb07f04b.js.map": "/react-portfolio/static/js/main.cb07f04b.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b5b5630.css",
-    "static/js/main.ec286916.js"
+    "static/css/main.5eae7413.css",
+    "static/js/main.cb07f04b.js"
   ]
 }
