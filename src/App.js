@@ -20,7 +20,7 @@ export default function App() {
         <Section id={"banner"} className={"banner-section"}>
           <div className={"container intro-cont"}>
             <h4>VIKTOR IVANOVSKI</h4>
-            <h2>JUNIOR WEB DEVELOPER</h2>
+            <h2>WEB DEVELOPER</h2>
             <p>
               Welcome to my corner of the web! I'm Viktor, a dedicated junior
               web developer with a love for crafting digital experiences. From

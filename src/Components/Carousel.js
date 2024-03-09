@@ -47,8 +47,8 @@ export default function Carousel() {
   return (
     <Swiper
       watchSlidesProgress={true}
-      slidesPerView={5}
-      spaceBetween={50}
+      slidesPerView={6}
+      spaceBetween={20}
       centeredSlides={true}
       autoplay={{
         delay: 2500,
@@ -61,16 +61,16 @@ export default function Carousel() {
       navigation={true}
       breakpoints={{
         300: {
-          slidesPerView: 1,
-        },
-        600: {
           slidesPerView: 2,
         },
-        800: {
+        600: {
           slidesPerView: 3,
         },
-        1024: {
+        800: {
           slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 5,
         },
       }}
       modules={[Autoplay, Pagination, Navigation]}
@@ -93,7 +93,9 @@ export default function Carousel() {
               src={slide.img}
               alt="slide_image"
             />
-            <h5>{slide.name}</h5>
+            <h5 style={{ paddingBottom: "2rem", fontSize: "1rem" }}>
+              {slide.name}
+            </h5>
           </div>
         </SwiperSlide>
       ))}

@@ -19,7 +19,7 @@ export default function NavMenu() {
             <a href="#about">About Me</a>
           </li>
           <li>
-            <a href="#carousel">Technologies</a>
+            <a href="#carousel">Skills</a>
           </li>
           <li>
             <a href="#projects">Projects</a>
@@ -35,10 +35,31 @@ export default function NavMenu() {
       {openSubMenu ? (
         <div className="sub-menu">
           <ul>
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Technologies</li>
-            <li>Contact</li>
+            <li>
+              <a onClick={handleOpenSubMenu} href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a onClick={handleOpenSubMenu} href="#about">
+                About
+              </a>
+            </li>
+            <li>
+              <a onClick={handleOpenSubMenu} href="#carousel">
+                Skills
+              </a>
+            </li>
+            <li>
+              <a onClick={handleOpenSubMenu} href="#projects">
+                Projects
+              </a>
+            </li>
+            <li>
+              <a onClick={handleOpenSubMenu} href="#footer">
+                Contact
+              </a>
+            </li>
           </ul>
           <Button onClick={handleOpenSubMenu} className={"hmb-close hmb-menu"}>
             <img src={closeIcon} alt="close-icon" />

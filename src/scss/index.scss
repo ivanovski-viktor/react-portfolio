@@ -3,8 +3,7 @@ $bg-black: #000001d7;
 $txt-white: #fff;
 $txt-transparent-white: #ffffffb7;
 $border-gray: #e4dcd5;
-$green: #068484;
-
+$washed-red: #f95252;
 //Global fonts
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 $poppins-font: "Poppins", Arial, sans-serif;
@@ -16,25 +15,14 @@ a {
   text-decoration: none;
   color: $txt-white;
   &:hover {
-    color: #ffffff62;
+    color: $washed-red;
   }
 }
 html {
-  font-size: 20px;
+  font-size: 18px;
   padding: 0 !important;
 }
 
-.button.hmb-menu {
-  width: 4rem;
-  padding: 0;
-  margin: 0;
-  border: none;
-  display: none;
-  padding-right: 20px;
-  &:hover {
-    background-color: #ffffff00;
-  }
-}
 .button {
   cursor: pointer;
   text-transform: uppercase;
@@ -49,18 +37,38 @@ html {
     background-color: $txt-white;
   }
 }
+.button.hmb-menu {
+  width: 4rem;
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: none;
+  padding-right: 20px;
+  &:hover {
+    background-color: #ffffff00;
+  }
+}
 body {
   padding: 0;
   margin: 0;
   .app {
-    .carousel-section {
+    .section {
+      min-height: 85vh;
+    }
+    .section.carousel-section {
       position: relative;
+      min-height: 15rem;
+      max-height: 20rem;
+      height: max-content;
+      .swiper .swiper-wrapper img {
+        width: 150px;
+      }
     }
     .carousel-section:after {
       font-size: 2rem;
       left: 50%;
       transform: translateX(-50%);
-      top: 20px;
+      top: 1.5rem;
       z-index: 1000;
       position: absolute;
       content: "Skills";
@@ -74,14 +82,15 @@ body {
     align-items: center;
     //   NAV
     .navbar {
-      background-color: #000000ce;
-      color: $txt-white;
-      font-weight: 500;
-      z-index: 2;
+      width: 100%;
       position: fixed;
       top: 0;
+      z-index: 2;
+      height: 5vh;
       padding: 20px;
-      width: 100%;
+      font-weight: 400;
+      color: $txt-white;
+      background-color: #000000ce;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -99,11 +108,9 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.2rem;
-        font-weight: bold;
-
+        font-weight: 500;
         img {
-          width: 3rem;
+          width: 2rem;
           margin-right: 10px;
           margin-left: 10px;
         }
@@ -130,21 +137,39 @@ body {
         z-index: 0;
         height: 80vh;
         padding-top: 20vh;
-        background: url("../assets/lake.jpg");
+        background: url("../assets/banner-bg.jpg");
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
         color: $txt-white;
         position: relative;
+        overflow: hidden;
+        @keyframes custom {
+          0% {
+            transform: translateX(0);
+          }
+          50% {
+            transform: translateX(50%);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
         &:before {
           z-index: 1;
           content: "";
           position: absolute;
           top: 0;
-          left: 0;
-          right: 0;
+          left: -100%; /* Adjusted left to 0 */
+          right: 0; /* Adjusted right to 0 */
           bottom: 0;
-          background-color: $bg-black;
+          background: radial-gradient(
+            circle at center,
+            #3f3f3fb2,
+            #000,
+            $bg-black
+          );
+          animation: custom 7s linear infinite;
         }
 
         .container.intro-cont {
@@ -152,7 +177,6 @@ body {
           padding-left: 8rem;
           padding-bottom: 4rem;
           h4 {
-            font-size: 1rem;
             font-weight: 700;
             color: $txt-transparent-white;
           }
@@ -173,12 +197,12 @@ body {
 
         .container.banner-img {
           z-index: 1;
-          width: 50%;
+          width: 70%;
           height: 100%;
-          background-image: url("../assets/viktor.jpg");
+          background-image: url("../assets/VIKTOR_IVANOVSKI.png");
           background-repeat: no-repeat;
           background-position: center center;
-          background-size: 60%;
+          background-size: contain;
         }
       }
       .section.about-section {
@@ -197,26 +221,28 @@ body {
           padding-right: 50px;
           .item {
             width: 100%;
-            background-color: $txt-white;
+            background: $bg-black;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
             display: flex;
             gap: 10px;
             align-items: center;
             justify-content: space-between;
-            font-size: 0.9rem;
             padding: 5px 15px;
             border-bottom: 4px solid #000;
-            color: #000;
+            color: $border-gray;
             transform: transition 3s ease-in-out;
             box-shadow: 2px 2px 10px 1px #0000003d;
             &:hover {
-              border-color: $green;
+              border-color: $washed-red;
               .number {
-                color: $green;
+                color: $washed-red;
               }
             }
             &.open {
               transform: transition 3s ease-in-out;
-              border-color: $green;
+              border-color: $washed-red;
             }
             .icon img {
               width: 20px;
@@ -230,7 +256,7 @@ body {
               margin: 0;
               font-weight: 600;
               &.open {
-                color: $green;
+                color: $washed-red;
               }
             }
           }
@@ -244,7 +270,7 @@ body {
       .section.carousel-section {
         width: 100%;
         z-index: 0;
-        padding-top: 3rem;
+        padding-top: 4.5rem;
         padding-bottom: 1rem;
         background: url("../assets/snow.jpg");
         background-position: center center;
@@ -260,7 +286,7 @@ body {
           left: 0;
           right: 0;
           bottom: 0;
-          background-color: $bg-black;
+          background: radial-gradient(circle at center, #3f3f3fb2, #000, #000);
         }
         .swiper-button-next,
         .swiper-button-prev {
@@ -277,6 +303,7 @@ body {
       .section.projects-section {
         width: 100%;
         height: 100%;
+        align-items: start;
         #projects {
           padding: 4rem 0;
           .tabs {
@@ -319,7 +346,7 @@ body {
         font-size: 0.8rem;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         background-image: url("../assets/snow.jpg");
         background-position: center;
@@ -327,14 +354,8 @@ body {
         background-repeat: no-repeat;
         box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.514);
         &:hover {
-          -ms-transform: scale(1.05); /* IE 9 */
-          -webkit-transform: scale(1.05); /* Safari 3-8 */
           transform: scale(1.05);
           transition: all 300ms ease;
-          -o-transition: all 300ms ease;
-          -ms-transition: all 300ms ease;
-          -moz-transition: all 300ms ease;
-          -webkit-transition: all 300ms ease;
         }
         &::after {
           position: absolute;
@@ -343,7 +364,7 @@ body {
           left: 0;
           bottom: 0;
           right: 0;
-          background-color: $bg-black;
+          background: radial-gradient(circle at center, #3f3f3fb2, #000);
           z-index: 2;
         }
         h4 {
@@ -353,7 +374,7 @@ body {
         }
         img {
           z-index: 3;
-          max-width: 100px !important;
+          max-width: 100px;
         }
         a {
           z-index: 3;
@@ -364,15 +385,15 @@ body {
     }
 
     .footer {
-      padding: 2rem 0;
+      position: relative;
+      padding: 1.5rem 0;
       height: 100%;
-      color: $txt-white;
+      color: $border-gray;
       width: 100%;
-      background: url("../assets/lake.jpg");
+      background: url("../assets/banner-bg.jpg");
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
-      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -387,7 +408,7 @@ body {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: $bg-black;
+        background: radial-gradient(circle at center, #3f3f3fb2, #000);
       }
       h5,
       p {
@@ -413,29 +434,31 @@ body {
         &.icons {
           border-top: 1px solid $txt-white;
           img:hover {
-            -ms-transform: scale(1.1); /* IE 9 */
-            -webkit-transform: scale(1.1); /* Safari 3-8 */
             transform: scale(1.1);
             transition: all 300ms ease;
-            -o-transition: all 300ms ease;
-            -ms-transition: all 300ms ease;
-            -moz-transition: all 300ms ease;
-            -webkit-transition: all 300ms ease;
           }
         }
       }
     }
   }
 }
+
+// RESPONSIVE DESIGN
+
 @media (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
   .button.hmb-menu {
     display: block;
   }
   .button.hmb-menu.hmb-close {
     z-index: 12;
     position: absolute;
-    top: 2rem;
-    right: 1rem;
+    top: -7vh;
+    right: 0rem;
+    width: 5rem;
+    background-color: $washed-red;
   }
   body .app .navbar .nav-menu {
     display: none !important;
@@ -445,11 +468,17 @@ body {
     ul {
       padding-right: 0;
       margin-right: 0;
+      &:hover {
+        color: $washed-red;
+      }
     }
   }
   .sub-menu {
     position: fixed;
-    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 9vh;
     left: 0;
     width: 100%;
     height: 100vh;
@@ -457,9 +486,10 @@ body {
     background-image: url("../assets/snow.jpg");
     background-size: cover;
     ul {
-      top: 12.5%;
       border-top: 1px solid $border-gray;
-      padding: 3rem 0rem !important;
+      padding: 0rem !important;
+      height: 100%;
+      padding-top: 12rem !important;
       margin: 0 2rem !important;
       position: relative;
       z-index: 12;
@@ -468,6 +498,13 @@ body {
       flex-direction: column;
       align-items: center;
       font-size: 2rem;
+      li {
+        color: $txt-white;
+        font-size: 3rem;
+        &:hover {
+          color: $washed-red;
+        }
+      }
     }
     &:before {
       z-index: 8;
@@ -477,14 +514,13 @@ body {
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: $bg-black;
+      background: radial-gradient(circle at center, #3f3f3fb2, #000, #000);
     }
   }
   .app .main #about .container.about-me div {
     padding: 0 1rem;
   }
 }
-// responsive
 @media (max-width: 767px) {
   body {
     .app {
@@ -493,13 +529,14 @@ body {
       }
       .main {
         .section.banner-section {
+          flex-direction: column;
           .container.intro-cont {
-            padding: 0 1.25rem;
-            width: 100%;
+            padding: 0;
+            width: 80%;
             text-align: center;
           }
           .container.banner-img {
-            display: none;
+            background-position: center bottom;
           }
         }
         .section.about-section {
