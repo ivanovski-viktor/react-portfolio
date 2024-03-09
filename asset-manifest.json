@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.5eae7413.css",
+    "main.css": "/react-portfolio/static/css/main.71faf154.css",
     "main.js": "/react-portfolio/static/js/main.cb07f04b.js",
     "static/media/VIKTOR_IVANOVSKI.png": "/react-portfolio/static/media/VIKTOR_IVANOVSKI.41f7af59b17f87ceedc5.png",
     "static/media/banner-bg.jpg": "/react-portfolio/static/media/banner-bg.3fdd6cf0bf750d8d481b.jpg",
@@ -9,11 +9,11 @@
     "static/media/react.png": "/react-portfolio/static/media/react.0fbfc6dfe09b646bf167.png",
     "static/media/php.png": "/react-portfolio/static/media/php.913aa6fd9f1b339a431a.png",
     "index.html": "/react-portfolio/index.html",
-    "main.5eae7413.css.map": "/react-portfolio/static/css/main.5eae7413.css.map",
+    "main.71faf154.css.map": "/react-portfolio/static/css/main.71faf154.css.map",
     "main.cb07f04b.js.map": "/react-portfolio/static/js/main.cb07f04b.js.map"
   },
   "entrypoints": [
-    "static/css/main.5eae7413.css",
+    "static/css/main.71faf154.css",
     "static/js/main.cb07f04b.js"
   ]
 }
