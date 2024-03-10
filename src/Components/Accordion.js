@@ -20,17 +20,19 @@ export default function Accordion() {
   const [curOpen, setIsOpen] = useState(1);
 
   return (
-    <div className="accordion">
-      {faqs.map((item, index) => (
-        <AccordionItem
-          onOpen={setIsOpen}
-          curOpen={curOpen}
-          num={index + 1}
-          title={item.title}
-          text={item.text}
-          key={item.title}
-        />
-      ))}
+    <div className="container accordion">
+      <div className="accordion">
+        {faqs.map((item, index) => (
+          <AccordionItem
+            onOpen={setIsOpen}
+            curOpen={curOpen}
+            num={index + 1}
+            title={item.title}
+            text={item.text}
+            key={item.title}
+          />
+        ))}
+      </div>
     </div>
   );
 }

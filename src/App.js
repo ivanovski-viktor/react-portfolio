@@ -9,6 +9,7 @@ import Carousel from "./Components/Carousel";
 import Projects from "./Components/Projects";
 import Accordion from "./Components/Accordion";
 import cv from "./assets/my-cv.pdf";
+import Contact from "./Components/Contact";
 export default function App() {
   return (
     <div className="app">
@@ -48,15 +49,16 @@ export default function App() {
               </p>
             </div>
           </div>
-          <div className={"container accordion"}>
-            <Accordion />
-          </div>
+          <Accordion />
         </Section>
         <Section id={"carousel"} className={"carousel-section"}>
           <Carousel />
         </Section>
         <Section id={"projects"} className={"projects-section"}>
           <Projects />
+        </Section>
+        <Section id={"contact"} className={"contact-me"}>
+          <Contact />
         </Section>
       </Main>
       <Footer></Footer>

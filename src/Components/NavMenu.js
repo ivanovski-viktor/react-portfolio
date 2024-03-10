@@ -25,7 +25,7 @@ export default function NavMenu() {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#footer">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -56,7 +56,7 @@ export default function NavMenu() {
               </a>
             </li>
             <li>
-              <a onClick={handleOpenSubMenu} href="#footer">
+              <a onClick={handleOpenSubMenu} href="#contact">
                 Contact
               </a>
             </li>

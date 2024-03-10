@@ -40,6 +40,7 @@ export default function Footer() {
       <div className="container">
         <p>Located in Skopje - Macedonia</p>
       </div>
+      <p>E-Mail: ivanovski.viktor@uklo.edu.mk</p>
     </div>
   );
 }
