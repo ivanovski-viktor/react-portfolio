@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.33132c25.css",
-    "main.js": "/react-portfolio/static/js/main.9d7febc7.js",
+    "main.css": "/react-portfolio/static/css/main.3ad7d826.css",
+    "main.js": "/react-portfolio/static/js/main.7e5b9996.js",
     "static/media/VIKTOR_IVANOVSKI.png": "/react-portfolio/static/media/VIKTOR_IVANOVSKI.41f7af59b17f87ceedc5.png",
     "static/media/banner-bg.jpg": "/react-portfolio/static/media/banner-bg.3fdd6cf0bf750d8d481b.jpg",
     "static/media/snow.jpg": "/react-portfolio/static/media/snow.98e8fb7250610b768b0d.jpg",
-    "static/media/my-cv.pdf": "/react-portfolio/static/media/my-cv.a6c3003b63f7e9ca35ec.pdf",
+    "static/media/my-cv.pdf": "/react-portfolio/static/media/my-cv.8239f88fff34f895a5b9.pdf",
     "static/media/react.png": "/react-portfolio/static/media/react.0fbfc6dfe09b646bf167.png",
     "static/media/php.png": "/react-portfolio/static/media/php.913aa6fd9f1b339a431a.png",
+    "static/media/tailwind.png": "/react-portfolio/static/media/tailwind.a1ebe9ae1c128df5681a.png",
     "index.html": "/react-portfolio/index.html",
-    "main.33132c25.css.map": "/react-portfolio/static/css/main.33132c25.css.map",
-    "main.9d7febc7.js.map": "/react-portfolio/static/js/main.9d7febc7.js.map"
+    "main.3ad7d826.css.map": "/react-portfolio/static/css/main.3ad7d826.css.map",
+    "main.7e5b9996.js.map": "/react-portfolio/static/js/main.7e5b9996.js.map"
   },
   "entrypoints": [
-    "static/css/main.33132c25.css",
-    "static/js/main.9d7febc7.js"
+    "static/css/main.3ad7d826.css",
+    "static/js/main.7e5b9996.js"
   ]
 }
