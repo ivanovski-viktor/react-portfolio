@@ -10,6 +10,7 @@ const PUBLIC_KEY = "bj2f5Pa0ZG48_KDDx";
 
 export default function Contact() {
   const form = useRef();
+  const [sentEmail, setSentEmain] = useState(false);
   const [emailError, setEmailError] = useState("");
 
   const validateEmail = (email) => {
@@ -36,14 +37,16 @@ export default function Contact() {
       })
       .then(
         () => {
-          console.log("SUCCESS!");
+          setSentEmain(true);
         },
         (error) => {
           console.log("FAILED...", error.text);
+          setSentEmain(false);
         }
       );
 
     e.target.reset();
+    setTimeout(() => setSentEmain(false), 8000);
   };
 
   return (
@@ -58,6 +61,16 @@ export default function Contact() {
         <Button className={"contact-button"} type="submit">
           Send Email
         </Button>
+        {sentEmail ? (
+          <span
+            style={{
+              paddingBottom: "1rem",
+              color: "green",
+            }}
+          >
+            Sucessfully sent e-mail!
+          </span>
+        ) : null}
       </form>
     </div>
   );

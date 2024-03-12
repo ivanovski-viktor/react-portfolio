@@ -3,16 +3,16 @@ import plusIcon from "../assets/plus.png";
 import minusIcon from "../assets/minus.png";
 const faqs = [
   {
-    title: "What is my education?",
-    text: "I'm a computer science student in my last year of studies at FICT Bitola! I'm currently enrolled in a Front-End Development academy with React.js at Change Academy Skopje",
+    title: "Formal Education:",
+    text: "Regarding my education, I am a senior computer science student currently in the final year of my studies at FICT Bitola. Concurrently, I am actively participating in a Front-End Development academy focused on React.js at Change Academy Skopje.e",
   },
   {
-    title: "Do I have any work experience ?",
-    text: "I have been working as a Wordpress Developer at Coordea on 3 projects since 1.11.2023 - 5 months experience. While working for Coordea I managed to strengthen my CSS skills (animations, specificity, dev-tools debugging) and my Programming skills in general.",
+    title: "Work Experience in Web Development",
+    text: "I have been working as a Wordpress Developer at Coordea on 3 projects since 1.11.2023 - 5 months experience. While working for Coordea I managed to: - Design the structure of web pages - Build given UI Designs - Build fully responsive web pages - Optimised and improved websites speed - Developed reusable code for future references - Worked with APIs and large databases!",
   },
   {
     title: "What am I looking for?",
-    text: "I'm looking for a Junior Web Developer opportunity or an Internship that can lead to full-time employment!",
+    text: "I am eager to contribute my skills and passion as a Junior Web Developer, aspiring to actively engage with a dynamic team and contribute to projects while furthering my professional growth within a collaborative and innovative work environment. I am enthusiastic about making valuable contributions and expanding my expertise in a company that values continuous learning and development.",
   },
 ];
 

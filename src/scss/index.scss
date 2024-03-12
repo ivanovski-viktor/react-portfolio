@@ -204,6 +204,7 @@ body {
           background-repeat: no-repeat;
           background-position: center center;
           background-size: contain;
+          transition: 3s ease-in-out;
         }
       }
       .section.about-section {
@@ -262,7 +263,7 @@ body {
             }
           }
           .content-box {
-            font-size: 0.8rem;
+            font-size: 1rem;
             padding-left: 10px;
             color: #000000ab;
           }
@@ -389,10 +390,12 @@ body {
       display: flex;
       justify-content: center;
       align-self: center;
+      padding-bottom: 2rem;
       .container.form-container {
         background-image: url("../assets/snow.jpg");
         width: 50%;
         position: relative;
+        z-index: 0;
         &::after {
           position: absolute;
           content: "";
@@ -508,7 +511,7 @@ body {
     display: block;
   }
   .button.hmb-menu.hmb-close {
-    z-index: 12;
+    z-index: 20;
     position: absolute;
     top: -7vh;
     right: 0rem;
@@ -537,7 +540,7 @@ body {
     left: 0;
     width: 100%;
     height: 91vh;
-    z-index: 10;
+    z-index: 18;
     background-image: url("../assets/snow.jpg");
     background-size: cover;
     ul {
@@ -547,13 +550,14 @@ body {
       padding-top: 4rem !important;
       margin: 1rem 2rem !important;
       position: relative;
-      z-index: 12;
+      z-index: 19;
       margin: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       font-size: 2rem;
       li {
+        z-index: 21;
         color: $txt-white;
         font-size: 3rem;
         &:hover {
@@ -562,7 +566,7 @@ body {
       }
     }
     &:before {
-      z-index: 8;
+      z-index: 18;
       content: "";
       position: absolute;
       top: -9vh;

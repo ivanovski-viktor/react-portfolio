@@ -26,6 +26,10 @@ const carouselData = [
     img: require("../assets/sass.png"),
   },
   {
+    name: "Tailwind",
+    img: require("../assets/tailwind.png"),
+  },
+  {
     name: "Bootstrap",
     img: require("../assets/bootstrap.png"),
   },
@@ -50,8 +54,9 @@ export default function Carousel() {
       slidesPerView={6}
       spaceBetween={20}
       centeredSlides={true}
+      loop={true}
       autoplay={{
-        delay: 2500,
+        delay: 1500,
         disableOnInteraction: false,
       }}
       pagination={{

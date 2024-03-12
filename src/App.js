@@ -23,8 +23,8 @@ export default function App() {
             <h4>VIKTOR IVANOVSKI</h4>
             <h2>WEB DEVELOPER</h2>
             <p>
-              Welcome to my corner of the web! I'm Viktor, a dedicated junior
-              web developer with a love for crafting digital experiences. From
+              Welcome to my corner of the web! I'm Viktor, a dedicated web
+              developer with a love for crafting digital experiences. From
               turning ideas into reality to solving complex problems, I thrive
               on the challenges that coding presents.
             </p>
@@ -41,11 +41,15 @@ export default function App() {
             <div>
               <h2>ABOUT ME:</h2>
               <p>
-                Hey, I'm Viktor Ivanovski, a coder in Skopje. When I'm not
-                knee-deep in code, you'll catch me exploring new places, gaming
-                or reading a few chapters of manga. I like to balance things out
-                with the occasional coding binge and, of course, enjoying a
-                drink or two. Cheers!😁
+                "Hey, I'm Viktor Ivanovski, a coder from Skopje. I've been
+                interested in the world of IT since the young age of 9. Starting
+                with operating systems and computer hardware, I later made the
+                switch to software development in 2019. Since then, I've been
+                steadily working towards a career in web development. When I'm
+                not coding, you'll find me exploring the digital realm, taking
+                breaks with some gaming and a few chapters of manga. I like to
+                keep things balanced, throwing in the occasional coding binge,
+                and, of course, savoring a drink or two. Cheers! 😁"
               </p>
             </div>
           </div>
