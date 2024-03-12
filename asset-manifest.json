@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.3ad7d826.css",
-    "main.js": "/react-portfolio/static/js/main.7e5b9996.js",
+    "main.js": "/react-portfolio/static/js/main.b9ecd71a.js",
     "static/media/VIKTOR_IVANOVSKI.png": "/react-portfolio/static/media/VIKTOR_IVANOVSKI.41f7af59b17f87ceedc5.png",
     "static/media/banner-bg.jpg": "/react-portfolio/static/media/banner-bg.3fdd6cf0bf750d8d481b.jpg",
     "static/media/snow.jpg": "/react-portfolio/static/media/snow.98e8fb7250610b768b0d.jpg",
@@ -11,10 +11,10 @@
     "static/media/tailwind.png": "/react-portfolio/static/media/tailwind.a1ebe9ae1c128df5681a.png",
     "index.html": "/react-portfolio/index.html",
     "main.3ad7d826.css.map": "/react-portfolio/static/css/main.3ad7d826.css.map",
-    "main.7e5b9996.js.map": "/react-portfolio/static/js/main.7e5b9996.js.map"
+    "main.b9ecd71a.js.map": "/react-portfolio/static/js/main.b9ecd71a.js.map"
   },
   "entrypoints": [
     "static/css/main.3ad7d826.css",
-    "static/js/main.7e5b9996.js"
+    "static/js/main.b9ecd71a.js"
   ]
 }
