@@ -24,6 +24,11 @@ export default function ProjectsData() {
     ],
     [
       {
+        image: require("../assets/movieIcon.png"),
+        title: "Movie Watch List",
+        link: "https://github.com/ivanovski-viktor/movie-list",
+      },
+      {
         image: require("../assets/calculator.png"),
         title: "BMI Calculator",
         link: "https://github.com/ivanovski-viktor/BMI-Calculator-React",
@@ -37,11 +42,6 @@ export default function ProjectsData() {
         image: require("../assets/recipe.png"),
         title: "Pizza Menu",
         link: "https://github.com/ivanovski-viktor/pizza-menu-react",
-      },
-      {
-        image: require("../assets/sole.png"),
-        title: "Step App",
-        link: "https://github.com/ivanovski-viktor/step-app",
       },
       {
         image: require("../assets/plane.png"),

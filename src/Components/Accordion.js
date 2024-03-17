@@ -4,7 +4,7 @@ import minusIcon from "../assets/minus.png";
 const faqs = [
   {
     title: "Formal Education:",
-    text: "Regarding my education, I am a senior computer science student currently in the final year of my studies at FICT Bitola. Concurrently, I am actively participating in a Front-End Development academy focused on React.js at Change Academy Skopje.e",
+    text: "Regarding my education, I am an apsolvent currently in the final year of my studies at FICT Bitola. Concurrently, I am actively participating in a Front-End Development academy focused on React.js at Change Academy Skopje.",
   },
   {
     title: "Work Experience in Web Development",

@@ -41,7 +41,7 @@ export default function App() {
             <div>
               <h2>ABOUT ME:</h2>
               <p>
-                "Hey, I'm Viktor Ivanovski, a coder from Skopje. I've been
+                Hey, I'm Viktor Ivanovski, a coder from Skopje. I've been
                 interested in the world of IT since the young age of 9. Starting
                 with operating systems and computer hardware, I later made the
                 switch to software development in 2019. Since then, I've been
@@ -49,7 +49,7 @@ export default function App() {
                 not coding, you'll find me exploring the digital realm, taking
                 breaks with some gaming and a few chapters of manga. I like to
                 keep things balanced, throwing in the occasional coding binge,
-                and, of course, savoring a drink or two. Cheers! 😁"
+                and, of course, savoring a drink or two. Cheers! 😁
               </p>
             </div>
           </div>
